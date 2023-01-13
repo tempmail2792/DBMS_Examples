@@ -93,8 +93,7 @@ INTERSECT
 SELECT S2.sname
 FROM Sailors S2, Boats B2, Reserves R2
 WHERE S2.sid = R2.sid AND R2.bid = B2.bid AND B2.color = ‘green’
--- 这个方法有bug。它其实返回的是有绿船的名字和有红船的名字，但同名可能不是同一个人
-```
+ -- This method has a bug. It actually returns the name with the green boat and the name with the red boat, but the same name may not be the same person
 
 **(Q7)** Find the names of sailors who have reserved at least two boats.
 
